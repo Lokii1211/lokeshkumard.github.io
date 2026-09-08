@@ -16,83 +16,65 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollReveals();
     initSectionInView();
     initHeroWordReveal();
+    initSkillTabs();
     initMagneticButtons();
     initStickyStackBlur();
     initAIChatbot();
 });
 
 /**
- * 0. HERO WORD-REVEAL
- * Splits the hero headline into per-word clip-path reveal wrappers,
- * then stagger-triggers each word.
- * Skipped when prefers-reduced-motion is set.
+ * 0. HERO HEADLINE ENTRANCE
+ * Smooth CSS class activation without destructive DOM splitting or word wrapping.
  */
 function initHeroWordReveal() {
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-
     const headline = document.getElementById('hero-headline');
     if (!headline) return;
+    headline.classList.add('is-revealed');
+}
 
-    // Collect text nodes and spans, wrapping each word
-    function wrapWords(el) {
-        const childNodes = Array.from(el.childNodes);
-        el.innerHTML = '';
+/**
+ * Interactive Capability Tabs in Skills Section
+ */
+function initSkillTabs() {
+    const filterButtons = document.querySelectorAll('.skill-filter-btn');
+    const skillCards = document.querySelectorAll('.skill-category-card');
 
-        childNodes.forEach(node => {
-            if (node.nodeType === Node.TEXT_NODE) {
-                // Split text node into words
-                const words = node.textContent.split(/(\s+)/);
-                words.forEach(word => {
-                    if (!word.trim()) {
-                        el.appendChild(document.createTextNode(word));
-                    } else {
-                        const wrap = document.createElement('span');
-                        wrap.className = 'word-reveal-wrap';
-                        const inner = document.createElement('span');
-                        inner.className = 'word-inner';
-                        inner.textContent = word;
-                        wrap.appendChild(inner);
-                        el.appendChild(wrap);
-                    }
-                });
-            } else if (node.nodeType === Node.ELEMENT_NODE) {
-                // Clone span, wrap its text content
-                const clone = node.cloneNode(false);
-                const textWords = node.textContent.split(/(\s+)/);
-                textWords.forEach(word => {
-                    if (!word.trim()) {
-                        clone.appendChild(document.createTextNode(word));
-                    } else {
-                        const inner = document.createElement('span');
-                        inner.className = 'word-inner';
-                        inner.textContent = word;
-                        const wrap = document.createElement('span');
-                        wrap.className = 'word-reveal-wrap';
-                        wrap.appendChild(inner);
-                        clone.appendChild(wrap);
-                    }
-                });
-                // Wrap the whole span in a word-reveal-wrap too
-                const outerWrap = document.createElement('span');
-                outerWrap.className = 'word-reveal-wrap';
-                const outerInner = document.createElement('span');
-                outerInner.className = 'word-inner';
-                outerInner.style.display = 'inline';
-                outerInner.appendChild(clone);
-                outerWrap.appendChild(outerInner);
-                el.appendChild(outerWrap);
-            }
+    if (!filterButtons.length || !skillCards.length) return;
+
+    filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const filter = btn.getAttribute('data-filter');
+
+            // Update active state
+            filterButtons.forEach(b => {
+                b.classList.remove('is-active');
+                b.setAttribute('aria-selected', 'false');
+            });
+            btn.classList.add('is-active');
+            btn.setAttribute('aria-selected', 'true');
+
+            // Filter cards with smooth fade
+            skillCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                if (filter === 'all' || category === filter) {
+                    card.style.display = 'flex';
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(12px) scale(0.98)';
+                    setTimeout(() => {
+                        card.style.transition = 'opacity 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1)';
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0) scale(1)';
+                    }, 20);
+                } else {
+                    card.style.transition = 'opacity 0.2s ease, transform 0.2s ease';
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(8px) scale(0.97)';
+                    setTimeout(() => {
+                        card.style.display = 'none';
+                    }, 200);
+                }
+            });
         });
-    }
-
-    wrapWords(headline);
-
-    // Trigger reveals staggered at 75ms per word
-    const wraps = headline.querySelectorAll('.word-reveal-wrap');
-    wraps.forEach((wrap, i) => {
-        setTimeout(() => {
-            wrap.classList.add('is-revealed');
-        }, 120 + i * 75);
     });
 }
 

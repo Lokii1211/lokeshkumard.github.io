@@ -180,11 +180,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-
-    <link rel="stylesheet" href="styles.css?v=6.0.0">
+    <link rel="stylesheet" href="styles.css?v=7.0.0">
 </head>
 
 <body>
@@ -243,7 +242,8 @@
                 </div>
 
                 <h1 class="hero-headline" id="hero-headline">
-                    Architecting Autonomous <span class="text-gradient">Multi-Agent Systems</span>, Real-Time Vision Pipelines &amp; Production RAG.
+                    Architecting Autonomous <span class="text-gradient">Multi-Agent Systems</span>,<br class="hero-break">
+                    Real-Time Vision &amp; Production RAG.
                 </h1>
 
                 <p class="hero-summary reveal-fade-up">
@@ -251,7 +251,7 @@
                 </p>
 
                 <div class="hero-actions reveal-fade-up">
-                    <a href="#projects" class="btn btn-primary" id="hero-cta-primary">View Work ↓</a>
+                    <a href="#projects" class="btn btn-primary" id="hero-cta-primary">Explore Shipped Work ↓</a>
                     <a href="#contact" class="btn btn-secondary" id="hero-cta-secondary">Get in Touch</a>
                 </div>
 
@@ -289,11 +289,49 @@
                         <span class="proof-label">Verified Production SLA</span>
                     </div>
                 </div>
+
+                <!-- Live Agent Orchestration Console (Visual Interactive Anchor) -->
+                <div class="hero-console-card reveal-fade-up" id="hero-console">
+                    <div class="console-header">
+                        <div class="console-title">
+                            <span class="pulse-emerald" aria-hidden="true"></span>
+                            <span>AGENTIC ORCHESTRATION ENGINE · LIVE RUNTIME</span>
+                        </div>
+                        <div class="console-status-pill">
+                            <span class="status-dot-mini"></span> CLUSTER ACTIVE · 28ms P95
+                        </div>
+                    </div>
+                    <div class="console-pipeline-grid">
+                        <div class="console-step">
+                            <div class="step-badge">01 · INPUT</div>
+                            <div class="step-name">Multilingual Voice Stream</div>
+                            <div class="step-detail">Tamil / Hindi / EN · Whisper STT &lt;180ms</div>
+                        </div>
+                        <div class="console-arrow" aria-hidden="true">→</div>
+                        <div class="console-step">
+                            <div class="step-badge">02 · ROUTER</div>
+                            <div class="step-name">LangGraph State Router</div>
+                            <div class="step-detail">Deterministic Fallback &amp; Tool Dispatch</div>
+                        </div>
+                        <div class="console-arrow" aria-hidden="true">→</div>
+                        <div class="console-step">
+                            <div class="step-badge">03 · MEMORY</div>
+                            <div class="step-name">pgvector &amp; ChromaDB</div>
+                            <div class="step-detail">Sub-100ms Cosine Distance Index</div>
+                        </div>
+                        <div class="console-arrow" aria-hidden="true">→</div>
+                        <div class="console-step highlight">
+                            <div class="step-badge">04 · OUTPUT</div>
+                            <div class="step-name">Verified AI Execution</div>
+                            <div class="step-detail">Sub-2s WhatsApp &amp; Web Response</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
 
         <!-- ============ ABOUT & FOUNDER MANIFESTO ============ -->
-        <section class="section section-light" id="about">
+        <section class="section section-dark" id="about">
             <div class="section-container">
                 <div class="section-header reveal-fade-up">
                     <span class="section-kicker">Core Philosophy</span>
@@ -354,7 +392,7 @@
         </section>
 
         <!-- ============ ARCHITECTURE PIPELINE (SVG DIAGRAM) ============ -->
-        <section class="section section-light" id="stack">
+        <section class="section section-dark" id="stack">
             <div class="section-container">
                 <div class="section-header reveal-fade-up">
                     <span class="section-kicker">Engineering Blueprint</span>
@@ -494,95 +532,204 @@
             </div>
         </section>
 
-        <!-- ============ FEATURED SYSTEMS & PROJECTS (BENTO GRID) ============ -->
+        <!-- ============ FEATURED SYSTEMS & PROJECTS (RICH BENTO GRID) ============ -->
         <section class="section section-dark" id="projects">
             <div class="section-container">
                 <div class="section-header reveal-fade-up">
                     <span class="section-kicker">Shipped Products</span>
-                    <h2 class="section-title">6 Real Projects. Real Users. Real Results.</h2>
-                    <p class="section-subtitle">Every system here is live, tested, and built from scratch — no templates, no tutorials.</p>
+                    <h2 class="section-title">6 Real Projects. Real Users. Proven Outcomes.</h2>
+                    <p class="section-subtitle">Every system here is live, tested, and built from scratch — with real metrics and intuitive interfaces.</p>
                 </div>
 
                 <div class="projects-sticky-stack">
 
-                    <!-- TIER 1 (STICKY PIN): VIYA AI (FLAGSHIP HERO TILE) -->
+                    <!-- TIER 1: VIYA AI (FLAGSHIP HERO SHOWCASE TILE) -->
                     <div class="project-sticky-tier tier-1">
                         <article class="bento-tile bento-hero-tile reveal-fade-up" id="project-viya">
                             <span class="bento-project-index">01</span>
-                            <div class="bento-tile-header">
-                                <div class="spread-badge-group">
-                                    <span class="badge-flagship">Flagship Product</span>
-                                    <span class="badge-status">● Live</span>
-                                </div>
-                                <p class="bento-plain-line">An AI that talks to you in Tamil, Hindi, or English — and helps you manage your money through voice.</p>
-                                <h3 class="bento-title">Viya AI — Your Personal AI Financial Advisor</h3>
-                                <p class="bento-pull-line">
-                                    Understands voice in <strong>5 Indian languages</strong>, responds in under 2 seconds, and connects to WhatsApp so you never need to open an app.
-                                </p>
-                                <div class="bento-callout-mini">
-                                    <strong>Scale:</strong> 121+ code updates shipped, live on web + WhatsApp, handles expense tracking, savings advice, and budget planning automatically.
-                                </div>
-                            </div>
+                            <div class="bento-tile-grid-2col">
+                                <div class="bento-tile-info">
+                                    <div class="spread-badge-group">
+                                        <span class="badge-flagship">Flagship Product</span>
+                                        <span class="badge-status">● Live on WhatsApp &amp; Web</span>
+                                    </div>
+                                    <p class="bento-plain-line">An AI that speaks your language — manage your money naturally through voice in Tamil, Hindi, or English.</p>
+                                    <h3 class="bento-title">Viya AI — Your Personal AI Financial Advisor</h3>
+                                    <p class="bento-pull-line">
+                                        Viya makes personal finance effortless. Instead of typing into complex budgeting apps, you simply talk or send voice notes on WhatsApp. It categorizes expenses, tracks budgets, and gives instant savings advice in <strong>under 2 seconds</strong>.
+                                    </p>
+                                    
+                                    <div class="bento-features-list">
+                                        <div class="feature-item">
+                                            <span class="feature-icon">🎙️</span>
+                                            <span><strong>5 Indian Languages:</strong> Speaks &amp; understands Tamil, Hindi, English, Telugu, Kannada.</span>
+                                        </div>
+                                        <div class="feature-item">
+                                            <span class="feature-icon">💬</span>
+                                            <span><strong>WhatsApp Integrated:</strong> Zero app downloads needed — manage money directly via WhatsApp.</span>
+                                        </div>
+                                        <div class="feature-item">
+                                            <span class="feature-icon">⚡</span>
+                                            <span><strong>Sub-2s Speed:</strong> 121+ production updates shipped with 95%+ intent accuracy.</span>
+                                        </div>
+                                    </div>
 
-                            <div class="bento-tile-footer">
-                                <div class="bento-tags">
-                                    <span class="bento-tag">Next.js PWA</span>
-                                    <span class="bento-tag">FastAPI</span>
-                                    <span class="bento-tag">LangChain</span>
-                                    <span class="bento-tag">Gemini Pro</span>
-                                    <span class="bento-tag">Supabase</span>
-                                    <span class="bento-tag">ChromaDB</span>
-                                    <span class="bento-tag">n8n</span>
-                                    <span class="bento-tag">Whisper STT</span>
+                                    <div class="bento-tags">
+                                        <span class="bento-tag">Next.js PWA</span>
+                                        <span class="bento-tag">FastAPI</span>
+                                        <span class="bento-tag">LangChain</span>
+                                        <span class="bento-tag">Gemini Pro</span>
+                                        <span class="bento-tag">Supabase</span>
+                                        <span class="bento-tag">ChromaDB</span>
+                                        <span class="bento-tag">Whisper STT</span>
+                                    </div>
+
+                                    <div class="bento-actions">
+                                        <a href="https://heyviya.vercel.app" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Launch Live App ↗</a>
+                                        <a href="https://github.com/Lokii1211/MoneyViya" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Source Code ↗</a>
+                                    </div>
                                 </div>
-                                <div class="bento-actions">
-                                    <a href="https://heyviya.vercel.app" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Launch App &nearr;</a>
-                                    <a href="https://github.com/Lokii1211/MoneyViya" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Code &nearr;</a>
+
+                                <!-- Rich Visual UI Mockup: Conversational Glass Chat -->
+                                <div class="bento-tile-visual">
+                                    <div class="product-preview-shell viya-preview">
+                                        <div class="preview-chrome">
+                                            <div class="chrome-dots"><span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span></div>
+                                            <div class="chrome-address">
+                                                <span class="secure-icon">🔒</span> heyviya.vercel.app
+                                            </div>
+                                            <div class="chrome-badge live-pulse">● WhatsApp Synced</div>
+                                        </div>
+                                        <div class="chat-preview-body">
+                                            <div class="chat-bubble user-bubble">
+                                                <div class="voice-waveform">
+                                                    <span class="mic-icon">🎙️</span>
+                                                    <span class="wave-bar w-1"></span>
+                                                    <span class="wave-bar w-2"></span>
+                                                    <span class="wave-bar w-3"></span>
+                                                    <span class="wave-bar w-4"></span>
+                                                    <span class="voice-text">"இந்த மாசம் பட்ஜெட் எவ்ளோ மிச்சம் இருக்கு?"</span>
+                                                </div>
+                                                <span class="chat-meta">Tamil Voice Input · Whisper STT (180ms)</span>
+                                            </div>
+                                            <div class="chat-bubble ai-bubble">
+                                                <div class="ai-avatar-badge">LK</div>
+                                                <div class="ai-content">
+                                                    <p>You have <strong>₹12,400 remaining</strong> in your discretionary budget. You're on track to save 22% of your target this month! 🎯</p>
+                                                    <div class="financial-stat-chip">
+                                                        <div class="stat-progress-bar"><div class="stat-progress-fill" style="width: 78%;"></div></div>
+                                                        <div class="stat-meta"><span>₹43,600 spent of ₹56,000</span><span class="stat-accent">Healthy Status ✓</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="quick-chip-row">
+                                                <span class="quick-chip">📊 Monthly Breakdown</span>
+                                                <span class="quick-chip">🔔 Set ₹500 Alert</span>
+                                                <span class="latency-tag">⚡ 1.8s Response</span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </article>
                     </div>
 
-                    <!-- TIER 2 (STICKY PIN): SMARTDETECT v2.0.0 (MAJOR COMPUTER VISION HERO TILE) -->
+                    <!-- TIER 2: SMARTDETECT v2.0.0 (COMPUTER VISION SHOWCASE TILE) -->
                     <div class="project-sticky-tier tier-2">
                         <article class="bento-tile bento-vision-tile reveal-fade-up" id="project-smartdetect">
                             <span class="bento-project-index">02</span>
-                            <div class="bento-tile-header">
-                                <div class="spread-badge-group">
-                                    <span class="badge-computer-vision">Security AI</span>
-                                    <span class="badge-status">● Engine v2.0.0</span>
-                                </div>
-                                <p class="bento-plain-line">A security camera system that never confuses two people — even across 10 different cameras at the same time.</p>
-                                <h3 class="bento-title">SmartDetect — Multi-Camera Person Tracking</h3>
-                                <p class="bento-pull-line">
-                                    Detects, tracks, and confirms identity in <strong>under 50ms per frame</strong>. If the system isn't sure it's the same person, it won't guess — preventing false matches completely.
-                                </p>
-                                <div class="bento-callout-mini">
-                                    <strong>Compliance:</strong> Built with privacy law (DPDP &amp; GDPR) built in — automatically deletes footage and generates legal deletion receipts.
-                                </div>
-                            </div>
+                            <div class="bento-tile-grid-2col">
+                                <div class="bento-tile-info">
+                                    <div class="spread-badge-group">
+                                        <span class="badge-computer-vision">Security AI</span>
+                                        <span class="badge-status">● Production Engine v2.0</span>
+                                    </div>
+                                    <p class="bento-plain-line">A security camera system that never confuses two people — even across 10 different cameras at the same time.</p>
+                                    <h3 class="bento-title">SmartDetect — Multi-Camera Person Tracking</h3>
+                                    <p class="bento-pull-line">
+                                        Detects, tracks, and confirms identities in <strong>under 50ms per frame</strong>. Standard camera systems mix people up when they cross paths; SmartDetect locks onto face identity first so it never makes mistaken identity guesses.
+                                    </p>
 
-                            <div class="bento-tile-footer">
-                                <div class="bento-tags">
-                                    <span class="bento-tag">Python 3.12</span>
-                                    <span class="bento-tag">FastAPI</span>
-                                    <span class="bento-tag">YOLOv8n</span>
-                                    <span class="bento-tag">InsightFace</span>
-                                    <span class="bento-tag">OSNet</span>
-                                    <span class="bento-tag">pgvector</span>
-                                    <span class="bento-tag">React 18</span>
+                                    <div class="bento-features-list">
+                                        <div class="feature-item">
+                                            <span class="feature-icon">👁️</span>
+                                            <span><strong>Zero Identity Confusion:</strong> Strict face-anchored matching eliminates false positive merges.</span>
+                                        </div>
+                                        <div class="feature-item">
+                                            <span class="feature-icon">⚡</span>
+                                            <span><strong>Sub-50ms Video Speed:</strong> Real-time YOLOv8 + OSNet Re-ID across multiple RTSP streams.</span>
+                                        </div>
+                                        <div class="feature-item">
+                                            <span class="feature-icon">🔒</span>
+                                            <span><strong>Biometric Privacy Law (DPDP &amp; GDPR):</strong> Auto-purges footage with verifiable deletion receipts.</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="bento-tags">
+                                        <span class="bento-tag">Python 3.12</span>
+                                        <span class="bento-tag">FastAPI</span>
+                                        <span class="bento-tag">YOLOv8n</span>
+                                        <span class="bento-tag">InsightFace ArcFace</span>
+                                        <span class="bento-tag">OSNet Re-ID</span>
+                                        <span class="bento-tag">pgvector</span>
+                                    </div>
+
+                                    <div class="bento-actions">
+                                        <a href="https://github.com/Lokii1211/Smart-Detect" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Source Code ↗</a>
+                                    </div>
                                 </div>
-                                <div class="bento-actions">
-                                    <a href="https://github.com/Lokii1211/Smart-Detect" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Code &nearr;</a>
+
+                                <!-- Rich Visual UI Mockup: CCTV Dual-Camera HUD Visualizer -->
+                                <div class="bento-tile-visual">
+                                    <div class="product-preview-shell vision-preview">
+                                        <div class="preview-chrome">
+                                            <div class="chrome-dots"><span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span></div>
+                                            <div class="chrome-address">
+                                                <span class="secure-icon">📹</span> SmartDetect v2.0 · Multi-Camera Cluster
+                                            </div>
+                                            <div class="chrome-badge rec-pulse">● LIVE · 60 FPS</div>
+                                        </div>
+                                        <div class="vision-preview-body">
+                                            <div class="cctv-dual-feed">
+                                                <div class="cctv-feed-box">
+                                                    <div class="feed-header"><span>CAM 01 · LOBBY ENTRANCE</span><span class="fps-tag">60 FPS</span></div>
+                                                    <div class="feed-screen screen-a">
+                                                        <div class="bbox-tracker" style="top: 22%; left: 30%; width: 38%; height: 58%;">
+                                                            <span class="bbox-label">TARGET #0842 · CONF 99.2%</span>
+                                                        </div>
+                                                        <div class="feed-crosshair"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="cctv-feed-box">
+                                                    <div class="feed-header"><span>CAM 02 · 2ND FL CORRIDOR</span><span class="fps-tag">60 FPS</span></div>
+                                                    <div class="feed-screen screen-b">
+                                                        <div class="bbox-tracker matched" style="top: 20%; left: 34%; width: 36%; height: 60%;">
+                                                            <span class="bbox-label matched">RE-ID MATCH: 98.6% · ID #0842</span>
+                                                        </div>
+                                                        <div class="feed-crosshair"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="vision-hud-footer">
+                                                <div class="hud-log-item">
+                                                    <span class="hud-time">08:42:15</span>
+                                                    <span class="hud-text">Face Anchor Locked · ArcFace 512-d (Cosine 0.76)</span>
+                                                </div>
+                                                <div class="hud-dpdp-pill">
+                                                    <span class="lock-icon">🔒</span> DPDP Auto-Purge: 6d 23h · Cryptographic Receipt Verified
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </article>
                     </div>
 
-                    <!-- TIER 3 (STICKY PIN): DUAL GRID (KAIZY + MENTIXY) -->
+                    <!-- TIER 3: DUAL GRID (KAIZY + MENTIXY) -->
                     <div class="project-sticky-tier tier-3">
                         <div class="bento-dual-row">
-                            <!-- BENTO TILE 3: KAIZY (MEDIUM TILE) -->
+                            <!-- BENTO TILE 3: KAIZY -->
                             <article class="bento-tile bento-medium-tile kaizy-tile reveal-fade-up" id="project-kaizy">
                                 <span class="bento-project-index">03</span>
                                 <div class="bento-tile-header">
@@ -590,13 +737,30 @@
                                         <span class="badge-marketplace">Services Marketplace</span>
                                         <span class="badge-status">● Live</span>
                                     </div>
-                                    <p class="bento-plain-line">Connects customers to nearby plumbers, electricians, and workers — with instant booking and protected payments.</p>
+                                    <p class="bento-plain-line">Find verified plumbers, electricians, and technicians near you in under 15 minutes.</p>
                                     <h3 class="bento-title">Kaizy — India's On-Demand Services App</h3>
                                     <p class="bento-pull-line">
-                                        Finds the nearest available worker across <strong>35 service categories</strong> and pays them same-day — no cash, no disputes.
+                                        Connecting customers to nearby skilled workers across <strong>35 categories</strong> with instant location dispatch, live tracking, and payments held safely in escrow until the job is done.
                                     </p>
-                                    <div class="bento-callout-mini">
-                                        <strong>Built:</strong> 18 pages, live map tracking, emergency SOS button, and surge pricing.
+                                </div>
+
+                                <!-- Mini Visual: Map Dispatch Radar -->
+                                <div class="product-mini-preview kaizy-preview">
+                                    <div class="radar-visual">
+                                        <div class="radar-circle circle-1"></div>
+                                        <div class="radar-circle circle-2"></div>
+                                        <div class="radar-ping"></div>
+                                        <div class="worker-pin">
+                                            <div class="worker-avatar">⚡</div>
+                                            <div class="worker-info">
+                                                <strong>Ramesh K. · Verified Electrician</strong>
+                                                <span>Rating: 4.9★ (124 jobs completed)</span>
+                                                <span class="eta-pill">📍 Arriving in 14 mins</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="escrow-badge-pill">
+                                        <span>🛡️ ₹850 Secured in Razorpay Escrow · Cashless</span>
                                     </div>
                                 </div>
 
@@ -609,27 +773,49 @@
                                         <span class="bento-tag">Mapbox GL</span>
                                     </div>
                                     <div class="bento-actions">
-                                        <a href="https://kaizyy.vercel.app" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Launch App &nearr;</a>
-                                        <a href="https://github.com/Lokii1211/kaizy" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Code &nearr;</a>
+                                        <a href="https://kaizyy.vercel.app" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Launch App ↗</a>
+                                        <a href="https://github.com/Lokii1211/kaizy" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Code ↗</a>
                                     </div>
                                 </div>
                             </article>
 
-                            <!-- BENTO TILE 4: MENTIXY (MEDIUM TILE) -->
+                            <!-- BENTO TILE 4: MENTIXY -->
                             <article class="bento-tile bento-medium-tile mentixy-tile reveal-fade-up" id="project-mentixy">
                                 <span class="bento-project-index">04</span>
                                 <div class="bento-tile-header">
                                     <div class="spread-badge-group">
-                                        <span class="badge-ai-career">Career Platform</span>
+                                        <span class="badge-ai-career">Career Intelligence</span>
                                         <span class="badge-status">● Live</span>
                                     </div>
-                                    <p class="bento-plain-line">Tells students exactly which jobs they're ready for — and what skills they're missing — based on a live coding test.</p>
+                                    <p class="bento-plain-line">Tells students exactly which jobs they qualify for based on a real coding test.</p>
                                     <h3 class="bento-title">Mentixy — AI Career Guidance Platform</h3>
                                     <p class="bento-pull-line">
-                                        Students solve real coding problems, get an AI career counselor's verdict, and see a clear roadmap to their target role.
+                                        Candidates solve real coding problems in a live browser arena. Claude AI analyzes their performance, builds a 4D skill profile, and maps them to their dream engineering jobs.
                                     </p>
-                                    <div class="bento-callout-mini">
-                                        <strong>Built:</strong> 15+ modules, supports Python, C++, Java, Go — and gives 4D skill scores.
+                                </div>
+
+                                <!-- Mini Visual: CareerDNA Radar & Claude AI Verdict -->
+                                <div class="product-mini-preview mentixy-preview">
+                                    <div class="dna-metric-bars">
+                                        <div class="metric-row">
+                                            <span class="m-name">Python / FastAPI</span>
+                                            <div class="metric-bar"><div class="metric-fill" style="width: 95%;"></div></div>
+                                            <span class="score">95%</span>
+                                        </div>
+                                        <div class="metric-row">
+                                            <span class="m-name">Multi-Agent Systems</span>
+                                            <div class="metric-bar"><div class="metric-fill" style="width: 90%;"></div></div>
+                                            <span class="score">90%</span>
+                                        </div>
+                                        <div class="metric-row">
+                                            <span class="m-name">pgvector Vector RAG</span>
+                                            <div class="metric-bar"><div class="metric-fill" style="width: 92%;"></div></div>
+                                            <span class="score">92%</span>
+                                        </div>
+                                    </div>
+                                    <div class="claude-verdict-box">
+                                        <span class="ai-sparkle">✨</span>
+                                        <p><strong>Claude AI Verdict:</strong> Top 2% Match for Senior AI Systems Engineer.</p>
                                     </div>
                                 </div>
 
@@ -639,22 +825,21 @@
                                         <span class="bento-tag">FastAPI</span>
                                         <span class="bento-tag">Claude AI</span>
                                         <span class="bento-tag">pgvector</span>
-                                        <span class="bento-tag">Redis</span>
                                         <span class="bento-tag">Judge0</span>
                                     </div>
                                     <div class="bento-actions">
-                                        <a href="https://synaptiqq.vercel.app" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Launch App &nearr;</a>
-                                        <a href="https://github.com/Lokii1211/SynaptiQ" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Code &nearr;</a>
+                                        <a href="https://synaptiqq.vercel.app" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Launch App ↗</a>
+                                        <a href="https://github.com/Lokii1211/SynaptiQ" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Code ↗</a>
                                     </div>
                                 </div>
                             </article>
                         </div>
                     </div>
 
-                    <!-- TIER 4 (STICKY PIN): DUAL GRID (KADAIGPT + AADHAARANALYTICS 360) -->
+                    <!-- TIER 4: DUAL GRID (KADAIGPT + AADHAARANALYTICS 360) -->
                     <div class="project-sticky-tier tier-4">
                         <div class="bento-dual-row">
-                            <!-- BENTO TILE 5: KADAIGPT (MEDIUM TILE) -->
+                            <!-- BENTO TILE 5: KADAIGPT -->
                             <article class="bento-tile bento-medium-tile kadai-tile reveal-fade-up" id="project-kadaigpt">
                                 <span class="bento-project-index">05</span>
                                 <div class="bento-tile-header">
@@ -662,13 +847,26 @@
                                         <span class="badge-retail">Voice Commerce AI</span>
                                         <span class="badge-status">● Open Source</span>
                                     </div>
-                                    <p class="bento-plain-line">A WhatsApp AI assistant for small grocery stores — handles billing, stock, and invoices by voice in Tamil or English.</p>
+                                    <p class="bento-plain-line">A WhatsApp AI assistant for small grocery stores — handles billing &amp; stock by voice in Tamil or English.</p>
                                     <h3 class="bento-title">KadaiGPT — Smart Kirana Store Assistant</h3>
                                     <p class="bento-pull-line">
-                                        Shop owner speaks, AI creates the invoice, updates the stock, and sends a GST bill — all in under 10 seconds.
+                                        Shop owners speak their daily sales. The AI creates the invoice, updates inventory, and generates a GST bill sent via WhatsApp in under 10 seconds.
                                     </p>
-                                    <div class="bento-callout-mini">
-                                        <strong>Built:</strong> 4 AI agents working together, 190+ code commits, works offline.
+                                </div>
+
+                                <!-- Mini Visual: Voice Kirana Invoice Generator -->
+                                <div class="product-mini-preview kadai-preview">
+                                    <div class="bill-preview-box">
+                                        <div class="bill-header">
+                                            <span>KADAI STORE #42</span>
+                                            <span class="bill-badge">GST INVOICE #882</span>
+                                        </div>
+                                        <div class="bill-items">
+                                            <div class="bill-line"><span>Toor Dal (1kg) x 2</span><span>₹240</span></div>
+                                            <div class="bill-line"><span>Sunflower Oil (1L) x 1</span><span>₹145</span></div>
+                                            <div class="bill-line total"><span>Total + GST (5%)</span><span>₹404.25</span></div>
+                                        </div>
+                                        <div class="bill-meta">🎙️ Generated by Voice in 8.4s · Sent to WhatsApp PDF</div>
                                     </div>
                                 </div>
 
@@ -679,29 +877,40 @@
                                         <span class="bento-tag">Gemini Pro</span>
                                         <span class="bento-tag">FastAPI</span>
                                         <span class="bento-tag">PostgreSQL</span>
-                                        <span class="bento-tag">OCR</span>
                                     </div>
                                     <div class="bento-actions">
-                                        <a href="https://github.com/Lokii1211/kadaigpt" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Code &nearr;</a>
+                                        <a href="https://github.com/Lokii1211/kadaigpt" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Code ↗</a>
                                     </div>
                                 </div>
                             </article>
 
-                            <!-- BENTO TILE 6: AADHAARANALYTICS 360 (MEDIUM TILE) -->
+                            <!-- BENTO TILE 6: AADHAARANALYTICS 360 -->
                             <article class="bento-tile bento-medium-tile aadhaar-tile reveal-fade-up" id="project-aadhaar">
                                 <span class="bento-project-index">06</span>
                                 <div class="bento-tile-header">
                                     <div class="spread-badge-group">
                                         <span class="badge-hackathon">National Hackathon</span>
-                                        <span class="badge-status">● UIDAI 2026</span>
+                                        <span class="badge-status">● UIDAI 2026 Finalist</span>
                                     </div>
-                                    <p class="bento-plain-line">Analyzed nearly 5 million official government records to find hidden population trends no one had spotted before.</p>
+                                    <p class="bento-plain-line">Analyzed nearly 5 million government records to find hidden population migration trends.</p>
                                     <h3 class="bento-title">AadhaarAnalytics 360 — Government Data Intelligence</h3>
                                     <p class="bento-pull-line">
-                                        Led a national hackathon team to process <strong>4.94 million Aadhaar records</strong> and built 9 interactive charts revealing urban migration patterns.
+                                        Led a national hackathon team to process <strong>4.94 million records</strong> without crashes, discovering a 28% surge in urban registrations missing from public reports.
                                     </p>
-                                    <div class="bento-callout-mini">
-                                        <strong>Discovery:</strong> Found a 28% surge in city registrations that wasn't visible in public reports.
+                                </div>
+
+                                <!-- Mini Visual: 4.94M Records Data Spike Chart -->
+                                <div class="product-mini-preview aadhaar-preview">
+                                    <div class="chart-mockup">
+                                        <div class="chart-bars-group">
+                                            <div class="chart-col"><div class="bar-fill" style="height: 40%;"></div><span>Q1</span></div>
+                                            <div class="chart-col"><div class="bar-fill" style="height: 55%;"></div><span>Q2</span></div>
+                                            <div class="chart-col"><div class="bar-fill" style="height: 68%;"></div><span>Q3</span></div>
+                                            <div class="chart-col highlight"><div class="bar-fill" style="height: 98%;"></div><span>Q4 (+28%)</span></div>
+                                        </div>
+                                        <div class="chart-caption">
+                                            <span class="pulse-amber">●</span> 4,942,668 Records Streamed · Urban Migration Spike Confirmed
+                                        </div>
                                     </div>
                                 </div>
 
@@ -709,12 +918,11 @@
                                     <div class="bento-tags">
                                         <span class="bento-tag">Python 3.12</span>
                                         <span class="bento-tag">Pandas</span>
-                                        <span class="bento-tag">NumPy</span>
                                         <span class="bento-tag">Plotly</span>
                                         <span class="bento-tag">Streamlit</span>
                                     </div>
                                     <div class="bento-actions">
-                                        <a href="https://github.com/Lokii1211" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Research &nearr;</a>
+                                        <a href="https://github.com/Lokii1211" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Research ↗</a>
                                     </div>
                                 </div>
                             </article>
@@ -725,143 +933,121 @@
             </div>
         </section>
 
-        <!-- ============ SKILLS ARSENAL ============ -->
-        <section class="section section-mid-dark" id="skills">
+        <!-- ============ SKILLS ARSENAL (BENTO MATRIX) ============ -->
+        <section class="section section-dark" id="skills">
             <div class="section-container">
                 <div class="section-header reveal-fade-up">
                     <span class="section-kicker">Technical Arsenal</span>
-                    <h2 class="section-title">What I Build With</h2>
-                    <p class="section-subtitle">The tools, frameworks, and technologies I use every day to build and ship production AI systems.</p>
+                    <h2 class="section-title">What I Build With &amp; Master</h2>
+                    <p class="section-subtitle">Categorized by engineering capability — from autonomous multi-agent state loops to low-latency computer vision and cloud infrastructure.</p>
+                </div>
+
+                <!-- Capability Filter Bar -->
+                <div class="skills-filter-bar reveal-fade-up" role="tablist" aria-label="Filter technologies by capability">
+                    <button class="skill-filter-btn is-active" data-filter="all" role="tab" aria-selected="true">All Capabilities</button>
+                    <button class="skill-filter-btn" data-filter="agents" role="tab" aria-selected="false">AI Agents &amp; Orchestration</button>
+                    <button class="skill-filter-btn" data-filter="vision" role="tab" aria-selected="false">Computer Vision</button>
+                    <button class="skill-filter-btn" data-filter="rag" role="tab" aria-selected="false">Vector DBs &amp; RAG</button>
+                    <button class="skill-filter-btn" data-filter="fullstack" role="tab" aria-selected="false">Full-Stack &amp; Cloud</button>
                 </div>
 
                 <div class="skills-grid">
 
-                    <!-- Card 1: AI & Automation -->
-                    <div class="skill-category-card reveal-fade-up">
-                        <div class="skill-card-icon">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
-                            </svg>
+                    <!-- Card 1: AI Agents & Automation -->
+                    <div class="skill-category-card reveal-fade-up" data-category="agents">
+                        <div class="skill-card-top-row">
+                            <div class="skill-card-icon icon-agents">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+                                </svg>
+                            </div>
+                            <span class="category-meta-tag">AUTONOMOUS WORKFLOWS</span>
                         </div>
-                        <h3 class="category-title">AI Agents &amp; Automation</h3>
-                        <div class="skill-primary-list">
-                            <span class="skill-primary-pill">LangChain</span>
-                            <span class="skill-primary-pill">LangGraph</span>
-                            <span class="skill-primary-pill">n8n</span>
-                        </div>
-                        <div class="category-tags">
-                            <span class="tag">CrewAI</span>
-                            <span class="tag">Model Context Protocol</span>
-                            <span class="tag">Claude AI</span>
-                            <span class="tag">Gemini Pro</span>
-                            <span class="tag">GPT-4</span>
-                            <span class="tag">Prompt Engineering</span>
+                        <h3 class="category-title">AI Agents &amp; Orchestration</h3>
+                        <p class="category-summary">Tools to build autonomous systems that reason, call external APIs, maintain memory, and execute multi-step workflows deterministically.</p>
+                        
+                        <div class="category-tags-grid">
+                            <span class="skill-badge highlight"><span class="badge-dot"></span> LangChain</span>
+                            <span class="skill-badge highlight"><span class="badge-dot"></span> LangGraph (State Graphs)</span>
+                            <span class="skill-badge highlight"><span class="badge-dot"></span> n8n Orchestration</span>
+                            <span class="skill-badge">CrewAI</span>
+                            <span class="skill-badge">Model Context Protocol (MCP)</span>
+                            <span class="skill-badge">Claude 3.5 &amp; Gemini Pro</span>
+                            <span class="skill-badge">Tool-Calling Loops</span>
+                            <span class="skill-badge">Prompt Engineering</span>
                         </div>
                     </div>
 
                     <!-- Card 2: Computer Vision -->
-                    <div class="skill-category-card reveal-fade-up">
-                        <div class="skill-card-icon">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><circle cx="11" cy="11" r="3"/>
-                            </svg>
+                    <div class="skill-category-card reveal-fade-up" data-category="vision">
+                        <div class="skill-card-top-row">
+                            <div class="skill-card-icon icon-vision">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><circle cx="11" cy="11" r="3"/>
+                                </svg>
+                            </div>
+                            <span class="category-meta-tag">VIDEO &amp; OBJECT DETECTION</span>
                         </div>
-                        <h3 class="category-title">Computer Vision &amp; Detection</h3>
-                        <div class="skill-primary-list">
-                            <span class="skill-primary-pill">YOLOv8</span>
-                            <span class="skill-primary-pill">InsightFace</span>
-                            <span class="skill-primary-pill">OSNet</span>
-                        </div>
-                        <div class="category-tags">
-                            <span class="tag">ByteTrack Tracking</span>
-                            <span class="tag">PyTorch</span>
-                            <span class="tag">OpenCV</span>
-                            <span class="tag">ArcFace 512-d</span>
-                            <span class="tag">Face Recognition</span>
-                        </div>
-                    </div>
-
-                    <!-- Card 3: Data & Memory -->
-                    <div class="skill-category-card reveal-fade-up">
-                        <div class="skill-card-icon">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
-                            </svg>
-                        </div>
-                        <h3 class="category-title">AI Memory &amp; Search</h3>
-                        <div class="skill-primary-list">
-                            <span class="skill-primary-pill">pgvector</span>
-                            <span class="skill-primary-pill">ChromaDB</span>
-                        </div>
-                        <div class="category-tags">
-                            <span class="tag">PostgreSQL 16</span>
-                            <span class="tag">Supabase</span>
-                            <span class="tag">Redis Cache</span>
-                            <span class="tag">Vector Search (RAG)</span>
-                            <span class="tag">Semantic Embeddings</span>
+                        <h3 class="category-title">Computer Vision &amp; Video AI</h3>
+                        <p class="category-summary">High-speed visual perception for real-time person detection, face recognition, and cross-camera tracking under 50ms.</p>
+                        
+                        <div class="category-tags-grid">
+                            <span class="skill-badge highlight"><span class="badge-dot"></span> YOLOv8 Detection</span>
+                            <span class="skill-badge highlight"><span class="badge-dot"></span> InsightFace (ArcFace 512-d)</span>
+                            <span class="skill-badge highlight"><span class="badge-dot"></span> OSNet Person Re-ID</span>
+                            <span class="skill-badge">ByteTrack Multi-Camera</span>
+                            <span class="skill-badge">PyTorch</span>
+                            <span class="skill-badge">OpenCV 4</span>
+                            <span class="skill-badge">RTSP Video Streaming</span>
+                            <span class="skill-badge">Face Recognition</span>
                         </div>
                     </div>
 
-                    <!-- Card 4: Backend -->
-                    <div class="skill-category-card reveal-fade-up">
-                        <div class="skill-card-icon">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
-                            </svg>
+                    <!-- Card 3: AI Memory & Vector DBs -->
+                    <div class="skill-category-card reveal-fade-up" data-category="rag">
+                        <div class="skill-card-top-row">
+                            <div class="skill-card-icon icon-rag">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                                </svg>
+                            </div>
+                            <span class="category-meta-tag">VECTOR SEARCH &amp; MEMORY</span>
                         </div>
-                        <h3 class="category-title">Backend &amp; APIs</h3>
-                        <div class="skill-primary-list">
-                            <span class="skill-primary-pill">FastAPI</span>
-                            <span class="skill-primary-pill">Python 3.12</span>
-                        </div>
-                        <div class="category-tags">
-                            <span class="tag">Node.js / Express</span>
-                            <span class="tag">WebSockets</span>
-                            <span class="tag">Async / Concurrent APIs</span>
-                            <span class="tag">REST API Design</span>
-                            <span class="tag">Payment Integrations</span>
-                        </div>
-                    </div>
-
-                    <!-- Card 5: Frontend -->
-                    <div class="skill-category-card reveal-fade-up">
-                        <div class="skill-card-icon">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
-                            </svg>
-                        </div>
-                        <h3 class="category-title">Frontend &amp; Web Apps</h3>
-                        <div class="skill-primary-list">
-                            <span class="skill-primary-pill">Next.js 14</span>
-                            <span class="skill-primary-pill">React 18</span>
-                        </div>
-                        <div class="category-tags">
-                            <span class="tag">TypeScript</span>
-                            <span class="tag">Tailwind CSS</span>
-                            <span class="tag">Progressive Web Apps</span>
-                            <span class="tag">Mapbox GL</span>
-                            <span class="tag">Modern CSS / HTML5</span>
+                        <h3 class="category-title">AI Memory &amp; Vector Databases (RAG)</h3>
+                        <p class="category-summary">Sub-100ms vector search and knowledge retrieval pipelines that connect LLMs to private databases safely.</p>
+                        
+                        <div class="category-tags-grid">
+                            <span class="skill-badge highlight"><span class="badge-dot"></span> pgvector (PostgreSQL 16)</span>
+                            <span class="skill-badge highlight"><span class="badge-dot"></span> ChromaDB</span>
+                            <span class="skill-badge">Supabase</span>
+                            <span class="skill-badge">Redis Ephemeral Cache</span>
+                            <span class="skill-badge">Semantic Caching</span>
+                            <span class="skill-badge">Cosine Similarity Search</span>
+                            <span class="skill-badge">Hybrid Dense/Sparse RAG</span>
                         </div>
                     </div>
 
-                    <!-- Card 6: DevOps & Compliance -->
-                    <div class="skill-category-card reveal-fade-up">
-                        <div class="skill-card-icon">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                            </svg>
+                    <!-- Card 4: Full-Stack & Cloud -->
+                    <div class="skill-category-card reveal-fade-up" data-category="fullstack">
+                        <div class="skill-card-top-row">
+                            <div class="skill-card-icon icon-fullstack">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+                                </svg>
+                            </div>
+                            <span class="category-meta-tag">INFRASTRUCTURE &amp; WEB</span>
                         </div>
-                        <h3 class="category-title">DevOps &amp; Privacy Compliance</h3>
-                        <div class="skill-primary-list">
-                            <span class="skill-primary-pill">Docker</span>
-                            <span class="skill-primary-pill">DPDP / GDPR</span>
-                        </div>
-                        <div class="category-tags">
-                            <span class="tag">Git &amp; GitHub Actions</span>
-                            <span class="tag">Vercel Deployments</span>
-                            <span class="tag">Linux / Ubuntu Server</span>
-                            <span class="tag">CI/CD Pipelines</span>
-                            <span class="tag">Audit Logging</span>
+                        <h3 class="category-title">Full-Stack &amp; Cloud Infrastructure</h3>
+                        <p class="category-summary">Hardened, typed backend microservices, real-time WebSocket streams, and responsive web applications built for high traffic.</p>
+                        
+                        <div class="category-tags-grid">
+                            <span class="skill-badge highlight"><span class="badge-dot"></span> FastAPI (Python 3.12)</span>
+                            <span class="skill-badge highlight"><span class="badge-dot"></span> Next.js 14 (App Router)</span>
+                            <span class="skill-badge highlight"><span class="badge-dot"></span> React 18 &amp; TypeScript</span>
+                            <span class="skill-badge">Docker Containers</span>
+                            <span class="skill-badge">WebSockets (Real-Time)</span>
+                            <span class="skill-badge">DPDP &amp; GDPR Compliance</span>
+                            <span class="skill-badge">CI/CD GitHub Actions</span>
                         </div>
                     </div>
 
@@ -869,7 +1055,7 @@
             </div>
         </section>
 
-        <!-- ============ TRACK RECORD ============ -->
+        <!-- ============ TRACK RECORD (EXECUTIVE ROADMAP) ============ -->
         <section class="section section-dark" id="journey">
             <div class="section-container">
                 <div class="section-header reveal-fade-up">
@@ -880,27 +1066,33 @@
 
                 <div class="timeline-track-container">
 
-                    <!-- Milestone 1 — Most Recent (gets pulsing dot) -->
-                    <div class="timeline-milestone-item">
-                        <div class="timeline-dot" aria-hidden="true"></div>
+                    <!-- Milestone 1 — 2026 SmartDetect -->
+                    <div class="timeline-milestone-item reveal-fade-up">
+                        <div class="timeline-dot-wrapper">
+                            <div class="timeline-dot active-dot" aria-hidden="true"></div>
+                            <div class="timeline-line-glow"></div>
+                        </div>
                         <div class="timeline-card">
                             <div class="timeline-card-header">
                                 <div class="timeline-tag-group">
-                                    <span class="timeline-badge">Now · 2026</span>
-                                    <span class="timeline-category">Security AI</span>
+                                    <span class="timeline-year-pill">Now · 2026</span>
+                                    <span class="timeline-role-badge">Lead AI Architect</span>
                                 </div>
-                                <span class="timeline-status-pill">● Live</span>
+                                <span class="timeline-status-pill">● Production Live</span>
                             </div>
                             <h3 class="timeline-title">SmartDetect v2.0 — Security Camera AI</h3>
-                            <p class="timeline-desc">Built a camera system that correctly identifies the same person across 10+ cameras — even from different angles, distances, and lighting. If it's not confident it's the right person, it won't guess.</p>
-                            <ul class="timeline-bullets">
-                                <li><strong>Never wrong about identity:</strong> A strict rule ensures the system won't make a match unless it's confirmed by face first — eliminating false positives.</li>
-                                <li><strong>Privacy by design:</strong> Footage is automatically deleted after 7 days, and a legal receipt is generated for every deletion.</li>
-                            </ul>
+                            <p class="timeline-desc">Built a camera system that correctly identifies the same person across 10+ cameras without ever mixing up identities. Built with privacy law (DPDP &amp; GDPR) compliance from day one.</p>
+                            
+                            <div class="timeline-metrics-pills">
+                                <span class="t-metric-badge">🎯 Zero Identity Mix-ups</span>
+                                <span class="t-metric-badge">⚡ &lt;50ms Frame Rate</span>
+                                <span class="t-metric-badge">🔒 7-Day Auto Privacy Purge</span>
+                            </div>
+
                             <div class="timeline-tech-tags">
                                 <span>YOLOv8</span>
                                 <span>InsightFace</span>
-                                <span>OSNet</span>
+                                <span>OSNet Re-ID</span>
                                 <span>ByteTrack</span>
                                 <span>FastAPI</span>
                                 <span>pgvector</span>
@@ -908,23 +1100,28 @@
                         </div>
                     </div>
 
-                    <!-- Milestone 2 -->
-                    <div class="timeline-milestone-item">
-                        <div class="timeline-dot" aria-hidden="true"></div>
+                    <!-- Milestone 2 — 2026 UIDAI Hackathon -->
+                    <div class="timeline-milestone-item reveal-fade-up">
+                        <div class="timeline-dot-wrapper">
+                            <div class="timeline-dot" aria-hidden="true"></div>
+                        </div>
                         <div class="timeline-card">
                             <div class="timeline-card-header">
                                 <div class="timeline-tag-group">
-                                    <span class="timeline-badge">2026</span>
-                                    <span class="timeline-category">Government Hackathon</span>
+                                    <span class="timeline-year-pill">2026</span>
+                                    <span class="timeline-role-badge">Team Lead &amp; Data Architect</span>
                                 </div>
                                 <span class="timeline-status-pill">● National Finalist</span>
                             </div>
-                            <h3 class="timeline-title">UIDAI Hackathon 2026 — Led Team to National Finals</h3>
-                            <p class="timeline-desc">Led a 4-person team that processed nearly 5 million official government records in a national competition. We found hidden city migration patterns that weren't in any public report.</p>
-                            <ul class="timeline-bullets">
-                                <li><strong>Scale:</strong> Processed all 4,942,668 records without crashing — using a streaming approach that handled the data in small chunks.</li>
-                                <li><strong>Key finding:</strong> Discovered a 28% spike in people registering in major cities — a trend the government didn't have in its published data.</li>
-                            </ul>
+                            <h3 class="timeline-title">UIDAI National Hackathon 2026 — Led Team to Finals</h3>
+                            <p class="timeline-desc">Led a 4-person team that processed nearly 5 million official government records in a national competition, discovering hidden 28% urban migration patterns that were missing from published reports.</p>
+                            
+                            <div class="timeline-metrics-pills">
+                                <span class="t-metric-badge">📊 4,942,668 Records Handled</span>
+                                <span class="t-metric-badge">🏆 National Finalist</span>
+                                <span class="t-metric-badge">⚡ Zero Memory Leaks</span>
+                            </div>
+
                             <div class="timeline-tech-tags">
                                 <span>Python 3.12</span>
                                 <span>Pandas</span>
@@ -935,23 +1132,28 @@
                         </div>
                     </div>
 
-                    <!-- Milestone 3 -->
-                    <div class="timeline-milestone-item">
-                        <div class="timeline-dot" aria-hidden="true"></div>
+                    <!-- Milestone 3 — 2026 VEL IDEAFORGE -->
+                    <div class="timeline-milestone-item reveal-fade-up">
+                        <div class="timeline-dot-wrapper">
+                            <div class="timeline-dot" aria-hidden="true"></div>
+                        </div>
                         <div class="timeline-card">
                             <div class="timeline-card-header">
                                 <div class="timeline-tag-group">
-                                    <span class="timeline-badge">2026</span>
-                                    <span class="timeline-category">EdTech</span>
+                                    <span class="timeline-year-pill">2026</span>
+                                    <span class="timeline-role-badge">Full-Stack AI Engineer</span>
                                 </div>
-                                <span class="timeline-status-pill">● Competition Finalist</span>
+                                <span class="timeline-status-pill">● Finalist Award</span>
                             </div>
-                            <h3 class="timeline-title">VEL IDEAFORGE 2026 — AI Career Platform Finalist</h3>
-                            <p class="timeline-desc">Built Mentixy — a platform that gives students a live coding test, analyzes the result with AI, and tells them exactly which engineering jobs they qualify for today and what to learn next.</p>
-                            <ul class="timeline-bullets">
-                                <li><strong>Smart skill matching:</strong> The AI compares the student's code submission against real job requirements using vector similarity — not just keywords.</li>
-                                <li><strong>Live coding arena:</strong> Students write and run code in Python, Java, C++, or Go directly in the browser, with instant scoring.</li>
-                            </ul>
+                            <h3 class="timeline-title">VEL IDEAFORGE 2026 — Mentixy AI Career Platform</h3>
+                            <p class="timeline-desc">Built Mentixy — an AI platform that gives students live coding tests, evaluates submissions with Claude AI, and gives them a personalized career roadmap to their target engineering job.</p>
+                            
+                            <div class="timeline-metrics-pills">
+                                <span class="t-metric-badge">💻 Judge0 Live Sandbox</span>
+                                <span class="t-metric-badge">🤖 Claude AI Evaluation</span>
+                                <span class="t-metric-badge">🎯 Vector Skill Matching</span>
+                            </div>
+
                             <div class="timeline-tech-tags">
                                 <span>Claude AI</span>
                                 <span>pgvector</span>
@@ -962,23 +1164,28 @@
                         </div>
                     </div>
 
-                    <!-- Milestone 4 -->
-                    <div class="timeline-milestone-item">
-                        <div class="timeline-dot" aria-hidden="true"></div>
+                    <!-- Milestone 4 — 2025 Viya AI -->
+                    <div class="timeline-milestone-item reveal-fade-up">
+                        <div class="timeline-dot-wrapper">
+                            <div class="timeline-dot" aria-hidden="true"></div>
+                        </div>
                         <div class="timeline-card">
                             <div class="timeline-card-header">
                                 <div class="timeline-tag-group">
-                                    <span class="timeline-badge">2025</span>
-                                    <span class="timeline-category">Voice AI</span>
+                                    <span class="timeline-year-pill">2025</span>
+                                    <span class="timeline-role-badge">Creator &amp; Lead Engineer</span>
                                 </div>
                                 <span class="timeline-status-pill">● 24/7 Live</span>
                             </div>
-                            <h3 class="timeline-title">Viya AI — Multilingual Financial Assistant Launched</h3>
-                            <p class="timeline-desc">Shipped a full AI financial assistant that speaks Tamil, Hindi, English, Telugu, and Kannada. Users talk to it like a person — it tracks expenses, gives savings tips, and answers financial questions in their native language.</p>
-                            <ul class="timeline-bullets">
-                                <li><strong>Responds in under 2 seconds:</strong> Even with voice input in Tamil, the full AI answer comes back fast enough to feel like a real conversation.</li>
-                                <li><strong>Available on WhatsApp:</strong> No app download needed — users just message on WhatsApp and the AI handles the rest.</li>
-                            </ul>
+                            <h3 class="timeline-title">Viya AI — Multilingual Voice Financial Assistant</h3>
+                            <p class="timeline-desc">Shipped a conversational AI financial assistant that speaks Tamil, Hindi, English, Telugu, and Kannada. Users talk to it like a friend — tracking expenses, setting budgets, and getting savings tips on WhatsApp.</p>
+                            
+                            <div class="timeline-metrics-pills">
+                                <span class="t-metric-badge">⚡ Sub-2s Voice Latency</span>
+                                <span class="t-metric-badge">🗣️ 5 Indian Languages</span>
+                                <span class="t-metric-badge">🚀 121+ Shipped Commits</span>
+                            </div>
+
                             <div class="timeline-tech-tags">
                                 <span>LangChain</span>
                                 <span>n8n</span>
@@ -995,7 +1202,7 @@
         </section>
 
         <!-- ============ INTERACTIVE FAQ SECTION (2-COLUMN SPLIT) ============ -->
-        <section class="section section-light" id="faq">
+        <section class="section section-dark" id="faq">
             <div class="section-container">
                 <div class="faq-layout-grid">
                     <!-- Left Sticky Info Column -->
